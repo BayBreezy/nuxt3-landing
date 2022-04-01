@@ -84,8 +84,8 @@
 
 		<!-- Side nav -->
 		<div
-			:class="{ 'w-60': mobileMenu }"
-			class="h-full md:hidden w-0 fixed z-50 top-0 left-0 overflow-x-hidden transition-all duration-300 dark:text-gray-200 bg-gradient-to-b from-white dark:from-gray-800 dark:via-gray-800/95 dark:to-primary-900 via-primary-200/95 to-blue-100/95"
+			:class="{ 'w-60': mobileMenu, 'w-0': !mobileMenu }"
+			class="h-full fixed z-50 top-0 left-0 overflow-x-hidden transition-all duration-300 dark:text-gray-200 bg-gradient-to-b from-white dark:from-gray-800 dark:via-gray-800/95 dark:to-primary-900 via-primary-200/95 to-blue-100/95"
 		>
 			<h1
 				class="text-3xl px-3 cursor-pointer font-medium mt-6 flex justify-between"
