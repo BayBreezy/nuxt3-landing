@@ -1,13 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Fresshh UI w/ Nuxt3 + TailwindCSS
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
+Take a look at the docs [NuxtJS 3 Docs](https://v3.nuxtjs.org), [Tailwind CSS](https://tailwindcss.com/docs/installation), [Color Mode Docs](https://color-mode.nuxtjs.org/)
+
+This article was ehlpful in getting started [Pairing Nuxt 3 with TailwindCSS and Supabase](https://www.netlify.com/blog/2021/10/29/pairing-nuxt-3-with-tailwindcss-and-supabase/)
+
+## Me?
+
+[🌎 Behon Baker](https://behonbaker.com)
 
 ## Setup
 
 Make sure to install the dependencies
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Development
@@ -15,7 +21,7 @@ yarn install
 Start the development server on http://localhost:3000
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 ## Production
@@ -23,7 +29,7 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+npm run build
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+Checkout the [deployment docs](https://v3.nuxtjs.org/docs/deployment).
