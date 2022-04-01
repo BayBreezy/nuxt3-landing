@@ -84,17 +84,45 @@
 
 		<!-- Side nav -->
 		<div
-			:class="{ 'w-3/4': mobileMenu, 'w-0': !mobileMenu }"
-			class="absolute md:hidden pl-5 inset-y-0 left-0 h-full z-[100] transition-all duration-300 dark:text-gray-200 bg-gradient-to-b from-white/90 dark:from-gray-800/95 dark:via-gray-800/95 dark:to-primary-900 via-primary-200/95 to-blue-100/95"
+			:class="{ 'w-60': mobileMenu }"
+			class="h-full md:hidden w-0 fixed z-50 top-0 left-0 overflow-x-hidden transition-all duration-300 dark:text-gray-200 bg-gradient-to-b from-white dark:from-gray-800 dark:via-gray-800/95 dark:to-primary-900 via-primary-200/95 to-blue-100/95"
 		>
-			<div
-				v-if="mobileMenu"
-				class="transition-all duration-300 opacity-0"
-				:class="{ 'opacity-100': mobileMenu }"
+			<h1
+				class="text-3xl px-3 cursor-pointer font-medium mt-6 flex justify-between"
 			>
-				<h1 class="text-3xl cursor-pointer font-medium mt-5">
-					Fress<span class="text-green-600">hh</span>
-				</h1>
+				<span> Fress<span class="text-green-600">hh</span> </span>
+				<button
+					@click="mobileMenu = !mobileMenu"
+					class="focus:outline-none focus:shadow-outline p-2 border rounded-md"
+				>
+					<CloseIcon class="h-5 w-5 hover:text-primary-600" />
+				</button>
+			</h1>
+			<div class="mt-3 ml-3 space-y-2">
+				<nuxt-link
+					class="block"
+					to="#"
+					v-for="(m, i) in links"
+					:key="`mobileLinks-${i}`"
+					>{{ m }}</nuxt-link
+				>
+				<nuxt-link
+					class="block"
+					to="#"
+					v-for="(m, i) in links2"
+					:key="`mobileLinks2-${i}`"
+					>{{ m }}</nuxt-link
+				>
+			</div>
+			<p class="text-gray-500 ml-3 mt-6">Account</p>
+			<div class="mt-3 ml-3 space-y-2">
+				<nuxt-link
+					class="block"
+					to="#"
+					v-for="(m, i) in users"
+					:key="`mobileUser-${i}`"
+					>{{ m }}</nuxt-link
+				>
 			</div>
 		</div>
 	</nav>

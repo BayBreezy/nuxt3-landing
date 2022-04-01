@@ -19,7 +19,7 @@
 				<img
 					src="/h2.png"
 					alt="Lovely Freshh Salad"
-					class="object-cover h-full w-auto mt-10 mx-auto hover:rotate-6 transition-all duration-1000 cursor-pointer"
+					class="object-cover h-full w-auto mt-10 mx-auto transition-all duration-1000"
 				/>
 				<!-- Reviews card for desktop only -->
 				<div
@@ -61,6 +61,11 @@
 </template>
 
 <script setup>
+	useMeta({
+		title: "Fresshh",
+		description:
+			"Fresshh is a family-friendly salad restaurant in the heart of the city.",
+	});
 	import StarIcon from "@/assets/icons/star.svg?component";
 	definePageMeta({
 		title: "Fresshh",
